@@ -20,7 +20,6 @@
 		0388B00620DC156E005F6A7C /* PacotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B00520DC156E005F6A7C /* PacotesCollectionViewCell.swift */; };
 		0388B00820DC1763005F6A7C /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B00720DC1763005F6A7C /* Viagem.swift */; };
 		0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B00920DC177A005F6A7C /* PacoteViagem.swift */; };
-		0388B00C20DC1858005F6A7C /* ViagemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B00B20DC1858005F6A7C /* ViagemDao.swift */; };
 		0388B01F20DC19EF005F6A7C /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B00E20DC19EF005F6A7C /* icon_back.png */; };
 		0388B02020DC19EF005F6A7C /* icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B00F20DC19EF005F6A7C /* icon_search@2x.png */; };
 		0388B02120DC19EF005F6A7C /* icon_package@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01020DC19EF005F6A7C /* icon_package@2x.png */; };
@@ -38,7 +37,15 @@
 		0388B02D20DC19EF005F6A7C /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01C20DC19EF005F6A7C /* img11.jpg */; };
 		0388B02E20DC19EF005F6A7C /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01D20DC19EF005F6A7C /* img10.jpg */; };
 		0388B02F20DC19EF005F6A7C /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01E20DC19EF005F6A7C /* icon_hotel.png */; };
-		0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */; };
+		165C837F43BDEE7DC35ED289 /* Pods_Alura_Viagens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C82E73F20A74982543727F /* Pods_Alura_Viagens.framework */; };
+		221C4088223061A8003D9D75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C4087223061A8003D9D75 /* Constants.swift */; };
+		221C408A2230623E003D9D75 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C40892230623E003D9D75 /* Method.swift */; };
+		221C408C22306285003D9D75 /* APIRequesterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C408B22306285003D9D75 /* APIRequesterError.swift */; };
+		221C408E223062BD003D9D75 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C408D223062BD003D9D75 /* Result.swift */; };
+		221C4090223062F9003D9D75 /* APIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C408F223062F9003D9D75 /* APIRequester.swift */; };
+		221C409322306342003D9D75 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409222306342003D9D75 /* EndpointType.swift */; };
+		221C409522306448003D9D75 /* ViagensEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409422306448003D9D75 /* ViagensEndpoint.swift */; };
+		221C409722306B34003D9D75 /* APIViagensService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409622306B34003D9D75 /* APIViagensService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +64,6 @@
 		0388B00520DC156E005F6A7C /* PacotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesCollectionViewCell.swift; sourceTree = "<group>"; };
 		0388B00720DC1763005F6A7C /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		0388B00920DC177A005F6A7C /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
-		0388B00B20DC1858005F6A7C /* ViagemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDao.swift; sourceTree = "<group>"; };
 		0388B00E20DC19EF005F6A7C /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
 		0388B00F20DC19EF005F6A7C /* icon_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_search@2x.png"; sourceTree = "<group>"; };
 		0388B01020DC19EF005F6A7C /* icon_package@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_package@2x.png"; sourceTree = "<group>"; };
@@ -75,7 +81,17 @@
 		0388B01C20DC19EF005F6A7C /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
 		0388B01D20DC19EF005F6A7C /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
 		0388B01E20DC19EF005F6A7C /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
-		0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemDao.swift; sourceTree = "<group>"; };
+		221C4087223061A8003D9D75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		221C40892230623E003D9D75 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		221C408B22306285003D9D75 /* APIRequesterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequesterError.swift; sourceTree = "<group>"; };
+		221C408D223062BD003D9D75 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		221C408F223062F9003D9D75 /* APIRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequester.swift; sourceTree = "<group>"; };
+		221C409222306342003D9D75 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		221C409422306448003D9D75 /* ViagensEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagensEndpoint.swift; sourceTree = "<group>"; };
+		221C409622306B34003D9D75 /* APIViagensService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViagensService.swift; sourceTree = "<group>"; };
+		90076D160F2F682397F7936F /* Pods-Alura Viagens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Viagens.release.xcconfig"; path = "Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens.release.xcconfig"; sourceTree = "<group>"; };
+		A6C82E73F20A74982543727F /* Pods_Alura_Viagens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alura_Viagens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD095E8D163EE39F2ED0E35 /* Pods-Alura Viagens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Viagens.debug.xcconfig"; path = "Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +99,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165C837F43BDEE7DC35ED289 /* Pods_Alura_Viagens.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00285A2F802BA23833000403 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6C82E73F20A74982543727F /* Pods_Alura_Viagens.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03715B1820DC050800F2250A = {
 			isa = PBXGroup;
 			children = (
 				03715B2320DC050800F2250A /* Alura Viagens */,
 				03715B2220DC050800F2250A /* Products */,
+				E1ADE38BC41BD5B5E68736A9 /* Pods */,
+				00285A2F802BA23833000403 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,15 +136,15 @@
 			isa = PBXGroup;
 			children = (
 				03715B2420DC050800F2250A /* AppDelegate.swift */,
+				221C408522306151003D9D75 /* Services */,
 				03715B3920DC055200F2250A /* Models */,
 				03715B3A20DC056300F2250A /* Views */,
 				03715B3B20DC057900F2250A /* Controllers */,
 				03715B2820DC050800F2250A /* Main.storyboard */,
+				22EE19B72231014E00E4FAE0 /* Supporting Files */,
 				0388B00D20DC19EF005F6A7C /* Assets */,
 				03715B2E20DC050A00F2250A /* Assets.xcassets */,
-				03715B3020DC050A00F2250A /* LaunchScreen.storyboard */,
 				03715B3320DC050A00F2250A /* Info.plist */,
-				03715B2B20DC050800F2250A /* Alura_Viagens.xcdatamodeld */,
 			);
 			path = "Alura Viagens";
 			sourceTree = "<group>";
@@ -127,8 +154,6 @@
 			children = (
 				0388B00720DC1763005F6A7C /* Viagem.swift */,
 				0388B00920DC177A005F6A7C /* PacoteViagem.swift */,
-				0388B00B20DC1858005F6A7C /* ViagemDao.swift */,
-				0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +202,55 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		221C408522306151003D9D75 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				221C40912230631C003D9D75 /* Endpoints */,
+				221C408622306198003D9D75 /* API Requester */,
+				221C409622306B34003D9D75 /* APIViagensService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		221C408622306198003D9D75 /* API Requester */ = {
+			isa = PBXGroup;
+			children = (
+				221C4087223061A8003D9D75 /* Constants.swift */,
+				221C40892230623E003D9D75 /* Method.swift */,
+				221C408B22306285003D9D75 /* APIRequesterError.swift */,
+				221C408D223062BD003D9D75 /* Result.swift */,
+				221C408F223062F9003D9D75 /* APIRequester.swift */,
+			);
+			path = "API Requester";
+			sourceTree = "<group>";
+		};
+		221C40912230631C003D9D75 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				221C409222306342003D9D75 /* EndpointType.swift */,
+				221C409422306448003D9D75 /* ViagensEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		22EE19B72231014E00E4FAE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03715B3020DC050A00F2250A /* LaunchScreen.storyboard */,
+				03715B2B20DC050800F2250A /* Alura_Viagens.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1ADE38BC41BD5B5E68736A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCD095E8D163EE39F2ED0E35 /* Pods-Alura Viagens.debug.xcconfig */,
+				90076D160F2F682397F7936F /* Pods-Alura Viagens.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03715B3620DC050A00F2250A /* Build configuration list for PBXNativeTarget "Alura Viagens" */;
 			buildPhases = (
+				8178D4ADB93092C7CD039331 /* [CP] Check Pods Manifest.lock */,
 				03715B1D20DC050800F2250A /* Sources */,
 				03715B1E20DC050800F2250A /* Frameworks */,
 				03715B1F20DC050800F2250A /* Resources */,
+				7F4CC1B162483E384B2D99A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +337,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F4CC1B162483E384B2D99A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8178D4ADB93092C7CD039331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alura Viagens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03715B1D20DC050800F2250A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,15 +393,21 @@
 			files = (
 				030997B520E12DF0009ECA38 /* PacotesViagensViewController.swift in Sources */,
 				030B69CF20E153BA006B5424 /* DetalhesViagemViewController.swift in Sources */,
+				221C409322306342003D9D75 /* EndpointType.swift in Sources */,
 				0388B00420DC153D005F6A7C /* TableViewCell.swift in Sources */,
 				0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */,
 				036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				0388B00620DC156E005F6A7C /* PacotesCollectionViewCell.swift in Sources */,
+				221C408E223062BD003D9D75 /* Result.swift in Sources */,
 				03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */,
-				0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */,
+				221C4088223061A8003D9D75 /* Constants.swift in Sources */,
+				221C409522306448003D9D75 /* ViagensEndpoint.swift in Sources */,
+				221C408C22306285003D9D75 /* APIRequesterError.swift in Sources */,
 				03715B2520DC050800F2250A /* AppDelegate.swift in Sources */,
-				0388B00C20DC1858005F6A7C /* ViagemDao.swift in Sources */,
 				0388B00820DC1763005F6A7C /* Viagem.swift in Sources */,
+				221C4090223062F9003D9D75 /* APIRequester.swift in Sources */,
+				221C408A2230623E003D9D75 /* Method.swift in Sources */,
+				221C409722306B34003D9D75 /* APIViagensService.swift in Sources */,
 				03715B2D20DC050800F2250A /* Alura_Viagens.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +550,7 @@
 		};
 		03715B3720DC050A00F2250A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD095E8D163EE39F2ED0E35 /* Pods-Alura Viagens.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +569,7 @@
 		};
 		03715B3820DC050A00F2250A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90076D160F2F682397F7936F /* Pods-Alura Viagens.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

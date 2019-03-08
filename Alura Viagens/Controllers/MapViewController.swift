@@ -38,8 +38,11 @@ class MapViewController: UIViewController {
 
         guard let lat = foundLocation.location?.coordinate.latitude else { return }
         guard let long = foundLocation.location?.coordinate.longitude else { return }
+        let locationCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
         let point = self.configurePoint(address: location, location: foundLocation)
-        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: lat, longitude: long), latitudinalMeters: 5000, longitudinalMeters: 5000)
+        let region = MKCoordinateRegion(center: locationCoordinate,
+                                        latitudinalMeters: 5000,
+                                        longitudinalMeters: 5000)
         self.map.setRegion(region, animated: true)
         self.map.addAnnotation(point)
       }

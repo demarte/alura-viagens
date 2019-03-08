@@ -50,6 +50,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
   }
 
+  @objc func openMapViewController(_ longPress: UILongPressGestureRecognizer) {
+    if longPress.state == .began {
+      guard let cell: UITableViewCell = longPress.view as? UITableViewCell else { return }
+      guard let indexPath = tabelaViagens.indexPath(for: cell) else { return }
+      if let viagens = listaViagens {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "mapa") as! MapViewController
+        controller.selectedLocation = viagens[indexPath.row].localizacao
+        navigationController?.pushViewController(controller, animated: true)
+      }
+    }
+  }
+
   // MARK: - UITableViewDataSource
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,9 +71,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+    let longPress = UILongPressGestureRecognizer(target: self, action: #selector(openMapViewController(_:)))
+
     if let viagens = listaViagens {
       let viagemAtual = viagens[indexPath.row]
       cell.configuraCelula(viagemAtual)
+      cell.addGestureRecognizer(longPress)
     }
     return cell
   }

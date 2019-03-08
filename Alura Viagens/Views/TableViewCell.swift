@@ -24,19 +24,6 @@ class TableViewCell: UITableViewCell {
     configuraImagem(viagem)
   }
 
-//  private func configuraImagem(_ viagem: Viagem) {
-//    serviceAPI.requestImage(string: viagem.caminhoDaImagem) { (result) in
-//      switch result {
-//      case .success(let image):
-//        self.imagemViagem.image = image
-//        self.imagemViagem.layer.cornerRadius = 10
-//        self.imagemViagem.layer.masksToBounds = true
-//        break
-//      case .failure(_):
-//        break
-//      }
-//    }
-//  }
   private func configuraImagem(_ viagem: Viagem) {
     serviceAPI.requestImage(string: viagem.caminhoDaImagem) { (result) in
       if let image = result {

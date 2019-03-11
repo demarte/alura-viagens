@@ -558,6 +558,7 @@
                                                 </constraints>
                                                 <size key="customSize" width="135" height="160"/>
                                                 <connections>
+                                                    <outlet property="botaoFavorito" destination="iO0-4e-bbp" id="bfE-14-Qiz"/>
                                                     <outlet property="imagemViagem" destination="M3j-dG-hgA" id="9eX-Qs-8ho"/>
                                                     <outlet property="labelPreco" destination="Rui-rN-RF5" id="dbU-se-CP4"/>
                                                     <outlet property="labelQuantidadeDias" destination="cxS-ub-VN6" id="EeY-Zc-3al"/>

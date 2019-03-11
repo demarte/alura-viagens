@@ -26,7 +26,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
   override func viewDidLoad() {
     super.viewDidLoad()
     pesquisarViagens.delegate = self
-    fetchPacotes()
+    fetchPacotesViagensAPI()
   }
 
   // MARK: - Métodos
@@ -35,7 +35,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
   }
 
-  private func fetchPacotes() {
+  private func fetchPacotesViagensAPI() {
     APIViagensService().fetchPacotesViagens { (pacotes) in
       switch pacotes {
       case .success(let value):

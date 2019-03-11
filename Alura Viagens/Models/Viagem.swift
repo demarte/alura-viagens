@@ -10,7 +10,6 @@ import UIKit
 
 struct Viagem: Codable {
 
-  let id: Int
   let titulo: String
   let quantidadeDeDias: Int
   let preco: String
@@ -18,7 +17,7 @@ struct Viagem: Codable {
   let localizacao: String
 
   enum CodingKeys: String, CodingKey {
-    case id, titulo, quantidadeDeDias, preco, localizacao
+    case titulo, quantidadeDeDias, preco, localizacao
     case caminhoDaImagem = "imageUrl"
   }
 }

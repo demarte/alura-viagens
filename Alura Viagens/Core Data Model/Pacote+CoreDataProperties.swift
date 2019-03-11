@@ -18,10 +18,11 @@ extension Pacote {
     }
 
     @NSManaged public var caminhoDaImagem: String
+    @NSManaged public var dataViagem: String
     @NSManaged public var preco: String
     @NSManaged public var quantidadeDeDias: Int16
     @NSManaged public var servico: String
     @NSManaged public var titulo: String
-    @NSManaged public var dataViagem: String
+    @NSManaged public var id: Int64
 
 }

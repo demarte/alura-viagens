@@ -12,7 +12,6 @@
 		036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A96D020E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift */; };
 		03715B2520DC050800F2250A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03715B2420DC050800F2250A /* AppDelegate.swift */; };
 		03715B2A20DC050800F2250A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03715B2820DC050800F2250A /* Main.storyboard */; };
-		03715B2D20DC050800F2250A /* Alura_Viagens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03715B2B20DC050800F2250A /* Alura_Viagens.xcdatamodeld */; };
 		03715B2F20DC050A00F2250A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03715B2E20DC050A00F2250A /* Assets.xcassets */; };
 		03715B3220DC050A00F2250A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03715B3020DC050A00F2250A /* LaunchScreen.storyboard */; };
 		03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03715B3E20DC06BB00F2250A /* ViewController.swift */; };
@@ -46,6 +45,11 @@
 		221C409322306342003D9D75 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409222306342003D9D75 /* EndpointType.swift */; };
 		221C409522306448003D9D75 /* ViagensEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409422306448003D9D75 /* ViagensEndpoint.swift */; };
 		221C409722306B34003D9D75 /* APIViagensService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C409622306B34003D9D75 /* APIViagensService.swift */; };
+		222E1E3A223391AB005A960E /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E39223391AB005A960E /* FavoritesViewController.swift */; };
+		222E1E3D22339739005A960E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E3C22339739005A960E /* PersistenceService.swift */; };
+		222E1E502233ABFD005A960E /* Alura_Viagens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E4E2233ABFD005A960E /* Alura_Viagens.xcdatamodeld */; };
+		222E1E532233AC76005A960E /* Pacote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E512233AC76005A960E /* Pacote+CoreDataClass.swift */; };
+		222E1E542233AC76005A960E /* Pacote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E522233AC76005A960E /* Pacote+CoreDataProperties.swift */; };
 		2281C91C22321F7C00A3BFAD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C91B22321F7C00A3BFAD /* MapViewController.swift */; };
 		2281C92022324A6A00A3BFAD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C91F22324A6A00A3BFAD /* LocationService.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +61,6 @@
 		03715B2120DC050800F2250A /* Alura Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alura Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03715B2420DC050800F2250A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03715B2920DC050800F2250A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03715B2C20DC050800F2250A /* Alura_Viagens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alura_Viagens.xcdatamodel; sourceTree = "<group>"; };
 		03715B2E20DC050A00F2250A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03715B3120DC050A00F2250A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03715B3320DC050A00F2250A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +94,11 @@
 		221C409222306342003D9D75 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		221C409422306448003D9D75 /* ViagensEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagensEndpoint.swift; sourceTree = "<group>"; };
 		221C409622306B34003D9D75 /* APIViagensService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViagensService.swift; sourceTree = "<group>"; };
+		222E1E39223391AB005A960E /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		222E1E3C22339739005A960E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		222E1E4F2233ABFD005A960E /* Alura_Viagens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alura_Viagens.xcdatamodel; sourceTree = "<group>"; };
+		222E1E512233AC76005A960E /* Pacote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pacote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		222E1E522233AC76005A960E /* Pacote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pacote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2281C91B22321F7C00A3BFAD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2281C91F22324A6A00A3BFAD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		90076D160F2F682397F7936F /* Pods-Alura Viagens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Viagens.release.xcconfig"; path = "Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				03715B2420DC050800F2250A /* AppDelegate.swift */,
+				222E1E3E22339BE5005A960E /* Core Data Model */,
 				221C408522306151003D9D75 /* Services */,
 				03715B3920DC055200F2250A /* Models */,
 				03715B3A20DC056300F2250A /* Views */,
@@ -179,6 +188,7 @@
 				030B69CE20E153BA006B5424 /* DetalhesViagemViewController.swift */,
 				036A96D020E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift */,
 				2281C91B22321F7C00A3BFAD /* MapViewController.swift */,
+				222E1E39223391AB005A960E /* FavoritesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +220,7 @@
 		221C408522306151003D9D75 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				222E1E3B2233971C005A960E /* Persistence */,
 				2281C91E22324A4600A3BFAD /* Location */,
 				2281C91D223249F900A3BFAD /* Web API */,
 			);
@@ -237,6 +248,23 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		222E1E3B2233971C005A960E /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				222E1E3C22339739005A960E /* PersistenceService.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		222E1E3E22339BE5005A960E /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				222E1E512233AC76005A960E /* Pacote+CoreDataClass.swift */,
+				222E1E522233AC76005A960E /* Pacote+CoreDataProperties.swift */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
 		2281C91D223249F900A3BFAD /* Web API */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,7 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				03715B3020DC050A00F2250A /* LaunchScreen.storyboard */,
-				03715B2B20DC050800F2250A /* Alura_Viagens.xcdatamodeld */,
+				222E1E4E2233ABFD005A960E /* Alura_Viagens.xcdatamodeld */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -414,13 +442,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				030997B520E12DF0009ECA38 /* PacotesViagensViewController.swift in Sources */,
+				222E1E542233AC76005A960E /* Pacote+CoreDataProperties.swift in Sources */,
 				2281C91C22321F7C00A3BFAD /* MapViewController.swift in Sources */,
 				2281C92022324A6A00A3BFAD /* LocationService.swift in Sources */,
+				222E1E532233AC76005A960E /* Pacote+CoreDataClass.swift in Sources */,
+				222E1E3D22339739005A960E /* PersistenceService.swift in Sources */,
 				030B69CF20E153BA006B5424 /* DetalhesViagemViewController.swift in Sources */,
 				221C409322306342003D9D75 /* EndpointType.swift in Sources */,
 				0388B00420DC153D005F6A7C /* TableViewCell.swift in Sources */,
 				0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */,
 				036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */,
+				222E1E502233ABFD005A960E /* Alura_Viagens.xcdatamodeld in Sources */,
 				0388B00620DC156E005F6A7C /* PacotesCollectionViewCell.swift in Sources */,
 				221C408E223062BD003D9D75 /* Result.swift in Sources */,
 				03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */,
@@ -429,10 +461,10 @@
 				221C408C22306285003D9D75 /* APIRequesterError.swift in Sources */,
 				03715B2520DC050800F2250A /* AppDelegate.swift in Sources */,
 				0388B00820DC1763005F6A7C /* Viagem.swift in Sources */,
+				222E1E3A223391AB005A960E /* FavoritesViewController.swift in Sources */,
 				221C4090223062F9003D9D75 /* APIRequester.swift in Sources */,
 				221C408A2230623E003D9D75 /* Method.swift in Sources */,
 				221C409722306B34003D9D75 /* APIViagensService.swift in Sources */,
-				03715B2D20DC050800F2250A /* Alura_Viagens.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,12 +666,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		03715B2B20DC050800F2250A /* Alura_Viagens.xcdatamodeld */ = {
+		222E1E4E2233ABFD005A960E /* Alura_Viagens.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				03715B2C20DC050800F2250A /* Alura_Viagens.xcdatamodel */,
+				222E1E4F2233ABFD005A960E /* Alura_Viagens.xcdatamodel */,
 			);
-			currentVersion = 03715B2C20DC050800F2250A /* Alura_Viagens.xcdatamodel */;
+			currentVersion = 222E1E4F2233ABFD005A960E /* Alura_Viagens.xcdatamodel */;
 			path = Alura_Viagens.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

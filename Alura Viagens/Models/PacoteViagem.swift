@@ -10,7 +10,6 @@ import UIKit
 
 struct PacoteViagem: Codable {
 
-  let id: Int
   let titulo: String
   let quantidadeDeDias: Int
   let preco: String
@@ -19,9 +18,27 @@ struct PacoteViagem: Codable {
   let nomeDoHotel: String
   let servico: String
   let dataViagem: String
+  var favorito = false
 
+  static func convertArrayOfManagedObject(_ array: [Pacote]) -> [PacoteViagem] {
+    var pacotesViagens: [PacoteViagem] = []
+    array.forEach { (pacote) in
+      let pacoteViagem = PacoteViagem(titulo: pacote.titulo,
+                                      quantidadeDeDias: Int(pacote.quantidadeDeDias),
+                                      preco: pacote.preco,
+                                      caminhoDaImagem: pacote.caminhoDaImagem,
+                                      localizacao: "",
+                                      nomeDoHotel: "",
+                                      servico: pacote.servico,
+                                      dataViagem: pacote.dataViagem,
+                                      favorito: true)
+      pacotesViagens.append(pacoteViagem)
+    }
+    return pacotesViagens
+  }
+  
   enum CodingKeys: String, CodingKey {
-    case id, titulo, quantidadeDeDias, preco, localizacao, nomeDoHotel, servico
+    case titulo, quantidadeDeDias, preco, localizacao, nomeDoHotel, servico
     case dataViagem = "data"
     case caminhoDaImagem = "imageUrl"
   }

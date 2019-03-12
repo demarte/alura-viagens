@@ -342,7 +342,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaPacote" id="iNp-IN-ep3" customClass="PacotesCollectionViewCell" customModule="Alura_Viagens" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaFavoritos" id="iNp-IN-ep3" customClass="FavoritesViewCell" customModule="Alura_Viagens" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -403,10 +403,10 @@
                                                 </constraints>
                                                 <size key="customSize" width="135" height="160"/>
                                                 <connections>
-                                                    <outlet property="imagemViagem" destination="hDN-Kn-INv" id="0hE-dw-jof"/>
-                                                    <outlet property="labelPreco" destination="ZHS-tP-BT3" id="ofY-BM-Ej0"/>
-                                                    <outlet property="labelQuantidadeDias" destination="QzA-Cn-V4F" id="fwS-mg-M6P"/>
-                                                    <outlet property="labelTitulo" destination="o0Y-dy-Mg7" id="8TQ-YE-Nxu"/>
+                                                    <outlet property="imagemViagem" destination="hDN-Kn-INv" id="5dl-dF-YOR"/>
+                                                    <outlet property="labelPreco" destination="ZHS-tP-BT3" id="jW9-Il-J52"/>
+                                                    <outlet property="labelQuantidadeDias" destination="QzA-Cn-V4F" id="2Z8-oG-QMx"/>
+                                                    <outlet property="labelTitulo" destination="o0Y-dy-Mg7" id="MNp-Gv-SFS"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -522,20 +522,14 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             </variation>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBu-F6-DvW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="118"/>
-                                                            <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO0-4e-bbp">
-                                                                    <rect key="frame" x="77" y="8" width="50" height="50"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <state key="normal" image="star"/>
-                                                                    <connections>
-                                                                        <action selector="favorite:" destination="LmJ-AJ-41S" eventType="touchUpInside" id="Dmd-qN-UUx"/>
-                                                                    </connections>
-                                                                </button>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO0-4e-bbp">
+                                                            <rect key="frame" x="105" y="0.0" width="30" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="star_black"/>
+                                                            <connections>
+                                                                <action selector="favorite:" destination="LmJ-AJ-41S" eventType="touchUpInside" id="Dmd-qN-UUx"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -545,13 +539,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="cxS-ub-VN6" secondAttribute="trailing" id="C5I-aS-w2l"/>
                                                     <constraint firstAttribute="trailing" secondItem="yOA-gA-9ET" secondAttribute="trailing" id="Ewm-dg-jdx"/>
                                                     <constraint firstItem="Rui-rN-RF5" firstAttribute="leading" secondItem="LmJ-AJ-41S" secondAttribute="leading" id="IRA-f9-I39"/>
-                                                    <constraint firstAttribute="trailing" secondItem="BBu-F6-DvW" secondAttribute="trailing" id="LYp-s6-JIe"/>
                                                     <constraint firstItem="M3j-dG-hgA" firstAttribute="top" secondItem="LmJ-AJ-41S" secondAttribute="top" id="NMy-mP-zy1"/>
-                                                    <constraint firstAttribute="bottom" secondItem="BBu-F6-DvW" secondAttribute="bottom" constant="21" id="cCA-g8-ag9"/>
                                                     <constraint firstItem="M3j-dG-hgA" firstAttribute="leading" secondItem="LmJ-AJ-41S" secondAttribute="leading" id="diq-a6-sdW"/>
                                                     <constraint firstItem="yOA-gA-9ET" firstAttribute="top" secondItem="LmJ-AJ-41S" secondAttribute="top" constant="99" id="f7z-LB-AyR"/>
-                                                    <constraint firstItem="BBu-F6-DvW" firstAttribute="leading" secondItem="LmJ-AJ-41S" secondAttribute="leading" id="jVa-Ge-wCy"/>
-                                                    <constraint firstItem="BBu-F6-DvW" firstAttribute="top" secondItem="LmJ-AJ-41S" secondAttribute="top" id="pDv-h9-WQP"/>
                                                     <constraint firstItem="yOA-gA-9ET" firstAttribute="leading" secondItem="LmJ-AJ-41S" secondAttribute="leading" id="pdF-PD-U2k"/>
                                                     <constraint firstAttribute="trailing" secondItem="Rui-rN-RF5" secondAttribute="trailing" id="qux-1y-6js"/>
                                                     <constraint firstItem="cxS-ub-VN6" firstAttribute="leading" secondItem="LmJ-AJ-41S" secondAttribute="leading" id="y3V-iK-WZq"/>
@@ -1151,6 +1141,6 @@
         <image name="icon_breakfast.png" width="50" height="50"/>
         <image name="icon_hotel.png" width="50" height="50"/>
         <image name="icon_package.png" width="25" height="25"/>
-        <image name="star" width="50" height="50"/>
+        <image name="star_black" width="50" height="50"/>
     </resources>
 </document>

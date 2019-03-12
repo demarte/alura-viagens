@@ -52,6 +52,7 @@
 		222E1E542233AC76005A960E /* Pacote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E1E522233AC76005A960E /* Pacote+CoreDataProperties.swift */; };
 		2281C91C22321F7C00A3BFAD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C91B22321F7C00A3BFAD /* MapViewController.swift */; };
 		2281C92022324A6A00A3BFAD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C91F22324A6A00A3BFAD /* LocationService.swift */; };
+		22C2651A223738D4007DE979 /* FavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C26519223738D4007DE979 /* FavoritesViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		222E1E522233AC76005A960E /* Pacote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pacote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2281C91B22321F7C00A3BFAD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2281C91F22324A6A00A3BFAD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		22C26519223738D4007DE979 /* FavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewCell.swift; sourceTree = "<group>"; };
 		90076D160F2F682397F7936F /* Pods-Alura Viagens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Viagens.release.xcconfig"; path = "Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens.release.xcconfig"; sourceTree = "<group>"; };
 		A6C82E73F20A74982543727F /* Pods_Alura_Viagens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alura_Viagens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD095E8D163EE39F2ED0E35 /* Pods-Alura Viagens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Viagens.debug.xcconfig"; path = "Target Support Files/Pods-Alura Viagens/Pods-Alura Viagens.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				0388B00320DC153D005F6A7C /* TableViewCell.swift */,
 				0388B00520DC156E005F6A7C /* PacotesCollectionViewCell.swift */,
+				22C26519223738D4007DE979 /* FavoritesViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */,
 				221C4088223061A8003D9D75 /* Constants.swift in Sources */,
 				221C409522306448003D9D75 /* ViagensEndpoint.swift in Sources */,
+				22C2651A223738D4007DE979 /* FavoritesViewCell.swift in Sources */,
 				221C408C22306285003D9D75 /* APIRequesterError.swift in Sources */,
 				03715B2520DC050800F2250A /* AppDelegate.swift in Sources */,
 				0388B00820DC1763005F6A7C /* Viagem.swift in Sources */,

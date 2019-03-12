@@ -17,16 +17,17 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
   @IBOutlet weak var labelContadorPacotes: UILabel!
 
   // MARK: - Atributos
-
   var listaComTodasViagens: [PacoteViagem] = []
   var listaViagens: [PacoteViagem] = []
+  var listaFavoritos: [PacoteViagem] = []
+  let persistenceService = PersistenceService.shared
 
   // MARK: - View Life Cycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
     pesquisarViagens.delegate = self
-    fetchPacotes()
+    fetchPacotesViagensAPI()
   }
 
   // MARK: - Métodos
@@ -35,13 +36,12 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
   }
 
-  private func fetchPacotes() {
+  private func fetchPacotesViagensAPI() {
     APIViagensService().fetchPacotesViagens { (pacotes) in
       switch pacotes {
       case .success(let value):
-        self.listaComTodasViagens = value
         DispatchQueue.main.async {
-          self.configuraColecaoDePacotes()
+          self.configuraColecaoDePacotes(value)
         }
         break
       case .failure(let error):
@@ -51,8 +51,15 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     }
   }
 
-  private func configuraColecaoDePacotes() {
-    listaViagens = listaComTodasViagens
+  private func fetchFavoritos() {
+    guard let favoritos = persistenceService.fetch(Pacote.self) else { return }
+    listaFavoritos = PacoteViagem.convertArrayOfManagedObject(favoritos)
+  }
+
+  private func configuraColecaoDePacotes(_ lista: [PacoteViagem]) {
+    listaComTodasViagens = lista
+    listaViagens = lista
+    fetchFavoritos()
     colecaoPacotesViagens.reloadData()
     labelContadorPacotes.text = atualizaContadorLabel()
   }
@@ -76,7 +83,10 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacotesCollectionViewCell
-    let pacoteAtual = listaViagens[indexPath.item]
+    var pacoteAtual = listaViagens[indexPath.item]
+    if listaFavoritos.contains(pacoteAtual) {
+      pacoteAtual.favorito = true
+    }
     celulaPacote.configuraCelula(pacoteAtual)
 
     return celulaPacote

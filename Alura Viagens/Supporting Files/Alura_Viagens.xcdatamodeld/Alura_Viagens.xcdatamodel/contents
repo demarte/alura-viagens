@@ -3,12 +3,13 @@
     <entity name="Pacote" representedClassName=".Pacote" syncable="YES">
         <attribute name="caminhoDaImagem" attributeType="String" syncable="YES"/>
         <attribute name="dataViagem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="preco" attributeType="String" syncable="YES"/>
         <attribute name="quantidadeDeDias" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="servico" attributeType="String" syncable="YES"/>
         <attribute name="titulo" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Pacote" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="Pacote" positionX="-36" positionY="9" width="128" height="150"/>
     </elements>
 </model>

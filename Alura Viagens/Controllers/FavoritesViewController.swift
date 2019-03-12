@@ -35,7 +35,7 @@ class FavoritesViewController: UIViewController, UICollectionViewDelegate, UICol
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacotesCollectionViewCell
+    let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaFavoritos", for: indexPath) as! FavoritesViewCell
     let pacoteAtual = listaFavoritos[indexPath.item]
     celulaPacote.configuraCelula(pacoteAtual)
     return celulaPacote

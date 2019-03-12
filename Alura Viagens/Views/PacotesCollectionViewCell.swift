@@ -28,7 +28,7 @@ class PacotesCollectionViewCell: UICollectionViewCell {
     labelQuantidadeDias.text = "\(pacoteViagem.quantidadeDeDias) dias"
     labelPreco.text = "R$ \(pacoteViagem.preco)"
     configuraImagem(pacoteViagem)
-    //setFavoriteImageButton(pacoteViagem.favorito)
+    setFavoriteImageButton(pacoteViagem.favorito)
     layer.borderWidth = 0.5
     layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
     layer.cornerRadius = 8
@@ -46,7 +46,7 @@ class PacotesCollectionViewCell: UICollectionViewCell {
     if isFavorite {
       botaoFavorito.setImage(UIImage(named: "star_yellow"), for: .normal)
     } else {
-      botaoFavorito.setImage(UIImage(named: "star"), for: .normal)
+      botaoFavorito.setImage(UIImage(named: "star_black"), for: .normal)
     }
   }
 
@@ -62,9 +62,7 @@ class PacotesCollectionViewCell: UICollectionViewCell {
     pacote.quantidadeDeDias = Int16(pacoteViagem.quantidadeDeDias)
     pacote.servico = pacoteViagem.servico
     pacote.titulo = pacoteViagem.titulo
-
     persistenceService.saveContext()
-    
   }
 
   private func deleteBy(id: Int) {

@@ -45,3 +45,9 @@ struct PacoteViagem: Codable {
     case caminhoDaImagem = "imageUrl"
   }
 }
+
+extension PacoteViagem: Equatable {
+  static func == (lhs: PacoteViagem, rhs: PacoteViagem) -> Bool{
+    return lhs.id == rhs.id
+  }
+}

@@ -20,6 +20,9 @@ class DetalhesViagemViewController: UIViewController {
   @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
   @IBOutlet weak var scrollViewPrincipal: UIScrollView!
   @IBOutlet weak var textFieldData: UITextField!
+  @IBOutlet weak var textFieldNumeroCartao: UITextField!
+  @IBOutlet weak var textFieldNomeCartao: UITextField!
+  @IBOutlet weak var textFieldSenhaCartao: UITextField!
 
   // MARK: - Atributos
 
@@ -69,6 +72,17 @@ class DetalhesViagemViewController: UIViewController {
     textFieldData.text = formatador.string(from: sender.date)
   }
 
+  private func pulsar(_ view: UIView) {
+    let pulsar = CASpringAnimation(keyPath: "transform.scale")
+    pulsar.fromValue = 0.95
+    pulsar.toValue = 1
+    pulsar.damping = 1
+    pulsar.initialVelocity = 0.5
+    pulsar.autoreverses = true
+    pulsar.repeatCount = 1
+    view.layer.add(pulsar, forKey: nil)
+  }
+
   // MARK: - IBActions
 
   @IBAction func textFieldDataDidBegin(_ sender: UITextField) {
@@ -83,10 +97,14 @@ class DetalhesViagemViewController: UIViewController {
   }
 
   @IBAction func botaoFinalizarCompra(_ sender: UIButton) {
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
-    controller.pacoteComprado = pacoteSelecionado
+    let textFields = [textFieldNumeroCartao, textFieldNomeCartao, textFieldData, textFieldSenhaCartao]
 
-    navigationController?.pushViewController(controller, animated: true)
+    if Validador().validaTextFields(textFields) {
+      pulsar(sender)
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
+      controller.pacoteComprado = pacoteSelecionado
+      navigationController?.pushViewController(controller, animated: true)
+    }
   }
 }

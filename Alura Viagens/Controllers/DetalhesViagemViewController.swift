@@ -72,6 +72,17 @@ class DetalhesViagemViewController: UIViewController {
     textFieldData.text = formatador.string(from: sender.date)
   }
 
+  private func pulsar(_ view: UIView) {
+    let pulsar = CASpringAnimation(keyPath: "transform.scale")
+    pulsar.fromValue = 0.95
+    pulsar.toValue = 1
+    pulsar.damping = 1
+    pulsar.initialVelocity = 0.5
+    pulsar.autoreverses = true
+    pulsar.repeatCount = 1
+    view.layer.add(pulsar, forKey: nil)
+  }
+
   // MARK: - IBActions
 
   @IBAction func textFieldDataDidBegin(_ sender: UITextField) {

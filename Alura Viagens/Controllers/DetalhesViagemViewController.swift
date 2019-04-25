@@ -20,6 +20,9 @@ class DetalhesViagemViewController: UIViewController {
   @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
   @IBOutlet weak var scrollViewPrincipal: UIScrollView!
   @IBOutlet weak var textFieldData: UITextField!
+  @IBOutlet weak var textFieldNumeroCartao: UITextField!
+  @IBOutlet weak var textFieldNomeCartao: UITextField!
+  @IBOutlet weak var textFieldSenhaCartao: UITextField!
 
   // MARK: - Atributos
 

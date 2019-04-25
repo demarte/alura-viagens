@@ -963,6 +963,9 @@
                         <outlet property="labelTituloPacoteViagem" destination="x6a-Pa-rJW" id="OJV-uw-vEp"/>
                         <outlet property="scrollViewPrincipal" destination="nRT-Vu-p3f" id="NgY-w5-bpV"/>
                         <outlet property="textFieldData" destination="OwW-jy-tIE" id="jlb-iA-tRY"/>
+                        <outlet property="textFieldNomeCartao" destination="h1B-fN-hXM" id="5hP-27-yKY"/>
+                        <outlet property="textFieldNumeroCartao" destination="rWr-ru-ow1" id="Ry2-r3-X7x"/>
+                        <outlet property="textFieldSenhaCartao" destination="cl1-Zl-tiM" id="cPl-fG-mdk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nj3-94-IjA" userLabel="First Responder" sceneMemberID="firstResponder"/>

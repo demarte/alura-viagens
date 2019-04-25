@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,15 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbR-iE-DJD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="sie-oC-IiM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksk-nN-4hd">
-                                <rect key="frame" x="72" y="309" width="230" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0o-K6-jr6">
+                                <rect key="frame" x="72.666666666666686" y="440" width="230" height="48"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="50"/>
@@ -33,22 +32,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mbR-iE-DJD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ABD-Vl-A7U"/>
-                            <constraint firstAttribute="trailing" secondItem="mbR-iE-DJD" secondAttribute="trailing" id="AEK-0h-N9B"/>
-                            <constraint firstItem="ksk-nN-4hd" firstAttribute="centerY" secondItem="mbR-iE-DJD" secondAttribute="centerY" id="Eml-Cb-wXV"/>
-                            <constraint firstAttribute="bottom" secondItem="mbR-iE-DJD" secondAttribute="bottom" id="ZUx-Qx-n4w"/>
-                            <constraint firstItem="ksk-nN-4hd" firstAttribute="centerX" secondItem="mbR-iE-DJD" secondAttribute="centerX" id="aia-bb-hWo"/>
-                            <constraint firstItem="mbR-iE-DJD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="fh8-do-1rf"/>
+                            <constraint firstItem="u0o-K6-jr6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="396" id="1Om-2m-shE"/>
+                            <constraint firstAttribute="trailing" secondItem="sie-oC-IiM" secondAttribute="trailing" id="3OD-qj-AQV"/>
+                            <constraint firstItem="sie-oC-IiM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9T5-Bk-NZ6"/>
+                            <constraint firstItem="u0o-K6-jr6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IAN-bD-QNa"/>
+                            <constraint firstAttribute="bottom" secondItem="sie-oC-IiM" secondAttribute="bottom" id="b2e-6r-qZa"/>
+                            <constraint firstItem="sie-oC-IiM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="g72-eh-nwB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
-        <image name="splash-screen" width="1125" height="2436"/>
+        <image name="launch-screen" width="719" height="1280"/>
     </resources>
 </document>

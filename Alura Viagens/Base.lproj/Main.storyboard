@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59T-FL-0v3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QmR-pq-SSv">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="emp-6b-Ndq">
+            <objects>
+                <viewController id="QmR-pq-SSv" customClass="LaunchScreenViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lc4-g6-hNu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen" translatesAutoresizingMaskIntoConstraints="NO" id="Mkh-oO-wah">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-CC-5rr">
+                                <rect key="frame" x="92" y="440" width="230" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="50"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mkh-oO-wah" firstAttribute="leading" secondItem="lc4-g6-hNu" secondAttribute="leading" id="1Ug-dm-4hT"/>
+                            <constraint firstItem="yIE-CC-5rr" firstAttribute="top" secondItem="xeL-9U-JOB" secondAttribute="top" constant="396" id="KOn-T4-yJm"/>
+                            <constraint firstAttribute="bottom" secondItem="Mkh-oO-wah" secondAttribute="bottom" id="ORv-nc-QHl"/>
+                            <constraint firstItem="yIE-CC-5rr" firstAttribute="centerX" secondItem="lc4-g6-hNu" secondAttribute="centerX" id="Y9z-9K-aWn"/>
+                            <constraint firstAttribute="trailing" secondItem="Mkh-oO-wah" secondAttribute="trailing" id="bZr-eA-8o8"/>
+                            <constraint firstItem="Mkh-oO-wah" firstAttribute="top" secondItem="lc4-g6-hNu" secondAttribute="top" id="rkK-u7-jqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xeL-9U-JOB"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelTopConstrant" destination="KOn-T4-yJm" id="Hc5-fC-Paj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQV-D0-Osq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1537.68115942029" y="133.92857142857142"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="YVa-LY-mmY">
             <objects>
-                <navigationController navigationBarHidden="YES" id="59T-FL-0v3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" navigationBarHidden="YES" id="59T-FL-0v3" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x7E-2k-Heu">
                         <autoresizingMask key="autoresizingMask"/>
@@ -1139,7 +1178,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="k5C-ie-BbF">
             <objects>
-                <tabBarController id="iS5-FW-n3o" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="iS5-FW-n3o" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RSl-ta-PXd"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQW-EB-G5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -1163,6 +1202,7 @@
         <image name="icon_breakfast.png" width="50" height="50"/>
         <image name="icon_hotel.png" width="50" height="50"/>
         <image name="icon_package.png" width="25" height="25"/>
+        <image name="launch-screen" width="719" height="1280"/>
         <image name="star_black" width="50" height="50"/>
     </resources>
 </document>

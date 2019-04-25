@@ -97,10 +97,14 @@ class DetalhesViagemViewController: UIViewController {
   }
 
   @IBAction func botaoFinalizarCompra(_ sender: UIButton) {
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
-    controller.pacoteComprado = pacoteSelecionado
+    let textFields = [textFieldNumeroCartao, textFieldNomeCartao, textFieldData, textFieldSenhaCartao]
 
-    navigationController?.pushViewController(controller, animated: true)
+    if Validador().validaTextFields(textFields) {
+      pulsar(sender)
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
+      controller.pacoteComprado = pacoteSelecionado
+      navigationController?.pushViewController(controller, animated: true)
+    }
   }
 }
